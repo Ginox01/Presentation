@@ -1,93 +1,183 @@
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: 100%;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
 }
 
 body {
-    background-color: whitesmoke;
-    min-height: 100vh;
+  background-color: whitesmoke;
+  min-height: 100vh;
 }
 
 #cv {
-    margin: 20px;
-    box-shadow: 0 0 15px 1px gray;
+  margin: 20px;
+  box-shadow: 0 0 15px 1px gray;
 }
 
 .left {
-    float: left;
-    width: 30%;
-    background-color: lightskyblue;
-    height: 95vh;
-    color: white;
+  float: left;
+  width: 30%;
+  background-color: lightskyblue;
+  height: 95vh;
+  color: white;
 }
 
 .right {
-    float: right;
-    width: 70%;
-    background-color: white;
-    height: 80vh;
+  float: right;
+  width: 70%;
+  background-color: white;
+  height: 80vh;
 }
 
 .clear {
-    clear: right;
+  clear: right;
 }
 .bottom {
-    height: 15vh;
-    background-color: rgb(255, 167, 178);
+  height: 15vh;
+  background-color: rgb(255, 167, 178);
 }
 
 .wrap-photo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
 
-.wrap-photo  img {
-    height: 80%;
-    width: 80%;
-    border: 1px solid white;
-    border-radius: 100%;
-
+.wrap-photo img {
+  height: 80%;
+  width: 80%;
+  border: 1px solid white;
+  border-radius: 100%;
 }
 
 .contacts ul {
-    list-style: none;
-    padding: 0;
-    margin-left: 10px;
+  list-style: none;
+  padding: 0;
+  margin-left: 10px;
+}
+
+.contacts li {
+  margin-bottom: 3px;
 }
 
 .contacts i {
-    color: rgb(255, 167, 178);
-    font-size: 24px;
-    
+  color: rgb(255, 167, 178);
+  font-size: 24px;
+  margin-right: 15px;
 }
 
-@media only screen and (max-width: 600px) {
-    .left {
-        float: none;
-        width: 100%;
-        min-height: 95vh;
-    }
+a {
+  text-decoration: none;
+}
 
-    .right {
-        float: none;
-        width: 100%;
-    }
+.contacts a {
+  font-size: 24px;
+  color: white;
+}
 
-    .wrap-photo {
-        padding-top: 30px;
-    }
+.contacts a:hover {
+  color: rgb(255, 167, 178);
+}
 
-    .title {
-        font-size: 50px;
-        letter-spacing: 2px;
-    }
-    
-    .contacts i {
-        font-size: 50px;
-    }
+span.mail {
+  font-size: 20px;
+}
 
+.bottom {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#btn-left {
+  font-size: 50px;
+  color: lightskyblue;
+  cursor: pointer;
+}
+
+#btn-left:hover {
+  color: aquamarine;
+}
+
+#btn-left:active {
+  color: rgb(255, 167, 178);
+}
+
+#btn-right {
+  font-size: 50px;
+  color: lightskyblue;
+  cursor: pointer;
+}
+
+#btn-right:hover {
+  color: aquamarine;
+}
+
+#btn-right:active {
+  color: rgb(255, 167, 178);
+}
+
+@media only screen and (max-width: 1000px) {
+  .contacts i {
+    margin-right: 5px;
+    font-size: 20px;
   }
+
+  span.mail {
+    font-size: 16px;
+  }
+
+  .contacts i {
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  span.mail {
+    font-size: 12px;
+  }
+
+  .contacts li {
+    margin-bottom: 25px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .left {
+    float: none;
+    width: 100%;
+    height: 110%;
+    padding-bottom: 20px;
+  }
+
+  .right {
+    float: none;
+    width: 100%;
+  }
+
+  .wrap-photo {
+    padding-top: 30px;
+  }
+
+  .title {
+    font-size: 50px;
+    letter-spacing: 2px;
+  }
+
+  .contacts i {
+    font-size: 30px;
+    color: white;
+    margin-right: 10px;
+  }
+
+  span.mail {
+    font-size: 20px;
+  }
+
+  .contacts ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
