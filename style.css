@@ -28,6 +28,7 @@ body {
   width: 70%;
   background-color: white;
   height: 80vh;
+  overflow: hidden;
 }
 
 .clear {
@@ -85,7 +86,6 @@ span.mail {
   font-size: 20px;
 }
 
-
 .bottom {
   display: flex;
   justify-content: space-around;
@@ -131,10 +131,83 @@ span.mail {
 .page {
   width: 10%;
   height: 100%;
-  border: 1px solid red;
+  transition: all 0.6s ease-in-out;
 }
 
+#page-1 {
+  background-color: rgb(247, 235, 235);
+  padding: 10px;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
 
+#page-1-div-intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#page-1-menu {
+  list-style: upper-alpha;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#page-2 {
+  background-color: rgb(233, 255, 233);
+}
+
+.page-title {
+  font-family: fantasy;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.div-page-2-content {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  font-size: 25px;
+}
+
+#page-3 {
+  background-color: rgb(248, 249, 235);
+}
+
+#page-3-div-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.div-page-title {
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+@keyframes animation-element {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0.8;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.activated-animation {
+  animation: animation-element 0.5s;
+}
 
 @media only screen and (max-width: 1000px) {
   .contacts i {
@@ -148,6 +221,10 @@ span.mail {
 
   .contacts i {
     margin-bottom: 15px;
+  }
+
+  .div-page-2-content {
+    font-size: 20px;
   }
 }
 
@@ -213,13 +290,21 @@ span.mail {
   }
 }
 
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 500px) {
+  .div-page-2-content {
+    font-size: 16px;
+  }
+}
 
+@media only screen and (max-width: 400px) {
   .contacts ul {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
-  
+
+  .div-page-2-content {
+    font-size: 14px;
+  }
 }
