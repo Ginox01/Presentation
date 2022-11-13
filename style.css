@@ -149,9 +149,10 @@ span.mail {
 }
 
 #page-1-menu {
+  margin-top: 30px;
   list-style: upper-alpha;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 }
 
 #page-2 {
@@ -239,7 +240,7 @@ span.mail {
 }
 
 .page-4-row {
-  height: 20%;
+  height: 15%;
   width: 100%;
   border: 1px solid red;
   display: block;
@@ -252,14 +253,14 @@ span.mail {
 }
 
 #page-4-row-content-one > div:nth-child(1) {
-  width: 30%;
+  width: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .fa-file {
-  font-size: 85px;
+  font-size: 50px;
   cursor: pointer;
 }
 
@@ -272,7 +273,14 @@ span.mail {
 }
 
 #page-4-row-content-one > div:nth-child(2) {
-  width: 70%;
+  width: 90%;
+  display: flex;
+  align-items: center;
+}
+
+#page-4-content-area {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 @keyframes animation-element {
@@ -313,6 +321,13 @@ span.mail {
 
   .div-page-2-content {
     font-size: 20px;
+  }
+
+  #page-1-menu {
+    margin-top: 30px;
+    list-style: upper-alpha;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -382,6 +397,11 @@ span.mail {
   .div-page-2-content {
     font-size: 16px;
   }
+
+  #page-1-menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media only screen and (max-width: 400px) {
@@ -408,5 +428,21 @@ span.mail {
 
   .div-3-content > img {
     height: 30px;
+  }
+
+  #page-1-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style: square;
+    margin-left: 30px;
+  }
+
+  #page-1-menu > li {
+    margin-top: 2px;
+  }
+
+  .list-menu > p {
+    margin-bottom: 2px;
   }
 }
