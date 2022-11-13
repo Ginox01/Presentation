@@ -155,7 +155,7 @@ span.mail {
 }
 
 #page-2 {
-  background-color: rgb(233, 255, 233);
+  background-color: rgb(240, 255, 240);
 }
 
 .page-title {
@@ -166,17 +166,63 @@ span.mail {
 
 .div-page-2-content {
   font-family: Arial, Helvetica, sans-serif;
-  padding: 10px;
-  font-size: 25px;
+  padding: 5px;
+  font-size: 24px;
 }
 
 #page-3 {
-  background-color: rgb(248, 249, 235);
+  background-color: rgb(232, 238, 255);
 }
 
 #page-3-div-content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+}
+
+.div-3-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.div-3-content > i {
+  height: 75px;
+  width: 75px;
+  font-size: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div-3-content > img {
+  background-color: none;
+  color: none;
+  height: 75px;
+}
+
+.skill-name {
+  text-align: center;
+  font-family: fantasy;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-top: 5px;
+}
+
+.percent {
+  position: relative;
+  height: 6px;
+  background-color: rgb(255, 167, 178);
+  width: 80%;
+  margin-bottom: 5px;
+}
+
+.percent div {
+  position: absolute;
+  inset: 0;
+  background-color: skyblue;
+  height: 100%;
 }
 
 .div-page-title {
@@ -185,6 +231,48 @@ span.mail {
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
+}
+
+#page-4 {
+  background-color: rgb(255, 241, 224);
+  padding: 5px;
+}
+
+.page-4-row {
+  height: 20%;
+  width: 100%;
+  border: 1px solid red;
+  display: block;
+  margin-bottom: 15px;
+}
+
+#page-4-row-content-one > div {
+  float: left;
+  height: 100%;
+}
+
+#page-4-row-content-one > div:nth-child(1) {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-file {
+  font-size: 85px;
+  cursor: pointer;
+}
+
+.fa-file:hover {
+  color: skyblue;
+}
+
+.fa-file:active {
+  color: rgb(255, 167, 178);
+}
+
+#page-4-row-content-one > div:nth-child(2) {
+  width: 70%;
 }
 
 @keyframes animation-element {
@@ -234,7 +322,7 @@ span.mail {
   }
 
   .contacts li {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
   }
 }
 
@@ -297,6 +385,10 @@ span.mail {
 }
 
 @media only screen and (max-width: 400px) {
+  #page-3-div-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .contacts ul {
     display: flex;
     justify-content: center;
@@ -306,5 +398,15 @@ span.mail {
 
   .div-page-2-content {
     font-size: 14px;
+  }
+
+  .div-3-content > i {
+    height: 30px;
+    width: 30px;
+    font-size: 30px;
+  }
+
+  .div-3-content > img {
+    height: 30px;
   }
 }
