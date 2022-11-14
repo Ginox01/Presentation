@@ -231,7 +231,7 @@ span.mail {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 #page-4 {
@@ -268,7 +268,6 @@ span.mail {
   color: aqua;
 }
 
-
 .fa-file:active {
   color: rgb(255, 167, 178);
 }
@@ -296,7 +295,28 @@ span.mail {
   font-size: 10px;
 }
 
+#page-5 {
+  background-color: lightyellow;
+}
 
+.page-5-work {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.page-5-work > p {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.page-5-work-value {
+  font-style: italic;
+  font-weight: bold;
+}
 
 @keyframes animation-element {
   0% {
@@ -319,6 +339,22 @@ span.mail {
 .activated-animation {
   animation: animation-element 0.5s;
 }
+
+/*
+
+
+
+
+
+++++++++++++++++++++ MEDIA QUERIES ++++++++++++++++++++
+
+
+
+
+
+
+
+*/
 
 @media only screen and (max-width: 1000px) {
   .contacts i {
@@ -413,7 +449,6 @@ span.mail {
     font-size: 16px;
   }
 
-  
   #page-1-menu {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
