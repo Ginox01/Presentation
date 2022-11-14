@@ -242,7 +242,6 @@ span.mail {
 .page-4-row {
   height: 15%;
   width: 100%;
-  border: 1px solid red;
   display: block;
   margin-bottom: 15px;
 }
@@ -253,7 +252,7 @@ span.mail {
 }
 
 #page-4-row-content-one > div:nth-child(1) {
-  width: 10%;
+  width: 15%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -262,26 +261,42 @@ span.mail {
 .fa-file {
   font-size: 50px;
   cursor: pointer;
+  color: skyblue;
 }
 
 .fa-file:hover {
-  color: skyblue;
+  color: aqua;
 }
+
 
 .fa-file:active {
   color: rgb(255, 167, 178);
 }
 
 #page-4-row-content-one > div:nth-child(2) {
-  width: 90%;
+  width: 85%;
   display: flex;
   align-items: center;
 }
 
 #page-4-content-area {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  margin-top: 30px;
 }
+
+.fa-file-arrow-down {
+  color: skyblue;
+  cursor: pointer;
+}
+
+.fa-file-arrow-down:active {
+  color: red;
+}
+
+.td-small {
+  font-size: 10px;
+}
+
+
 
 @keyframes animation-element {
   0% {
@@ -398,9 +413,21 @@ span.mail {
     font-size: 16px;
   }
 
+  
   #page-1-menu {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+  .page-4-row {
+    height: 5%;
+    width: 100%;
+    display: block;
+    margin-bottom: 0px;
+    font-size: 12px;
+  }
+
+  .fa-file {
+    font-size: 20px;
   }
 }
 
