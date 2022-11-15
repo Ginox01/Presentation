@@ -324,7 +324,15 @@ span.mail {
   background-color: lightyellow;
 }
 
+#page-7 {
+  background-color: rgb(250, 236, 239);
+}
 
+.page-7-content-area {
+  width: 94%;
+  height: 75%;
+  margin: auto auto;
+}
 
 @keyframes animation-element {
   0% {
@@ -392,7 +400,6 @@ span.mail {
   .reduce-5 {
     font-size: 14px;
   }
-
 }
 
 @media only screen and (max-width: 800px) {
@@ -402,6 +409,10 @@ span.mail {
 
   .contacts li {
     margin-bottom: 20px;
+  }
+
+  .page-7-content-area > p {
+    font-size: 14px;
   }
 }
 
@@ -445,6 +456,10 @@ span.mail {
   .reduce-5 {
     font-size: initial;
   }
+
+  .page-7-content-area > p {
+    font-size: initial;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -461,6 +476,10 @@ span.mail {
   }
 
   .page-5-work > p {
+    font-size: 14px;
+  }
+
+  .page-7-content-area > p {
     font-size: 14px;
   }
 }
@@ -484,6 +503,12 @@ span.mail {
 
   .fa-file {
     font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .page-7-content-area > p {
+    font-size: 12px;
   }
 }
 
@@ -531,5 +556,9 @@ span.mail {
 
   .page-5-work > p {
     font-size: 12px;
+  }
+
+  .page-7-content-area > p {
+    font-size: 10px;
   }
 }
