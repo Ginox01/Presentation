@@ -334,6 +334,36 @@ span.mail {
   margin: auto auto;
 }
 
+#page-8 {
+  background-color: rgb(250, 236, 239);
+}
+
+.gray {
+  background-color: gainsboro;
+}
+
+#page-9{
+  background-color: rgb(250, 236, 239);;
+}
+
+#page-10 {
+  background-color: rgb(253, 231, 248);
+}
+
+.hobby-icons {
+  width: 20%;
+  height: 100%;
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hobby-icons i {
+  font-size: 60px;
+}
+
+
 @keyframes animation-element {
   0% {
     opacity: 1;
@@ -400,6 +430,16 @@ span.mail {
   .reduce-5 {
     font-size: 14px;
   }
+
+  .list-reduce {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 900px){
+  .page-7-content-area > p {
+    font-size: 15px;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -458,7 +498,7 @@ span.mail {
   }
 
   .page-7-content-area > p {
-    font-size: initial;
+    font-size: 15px;
   }
 }
 
@@ -508,6 +548,10 @@ span.mail {
 
 @media only screen and (max-width: 450px) {
   .page-7-content-area > p {
+    font-size: 12px;
+  }
+
+  .list-reduce {
     font-size: 12px;
   }
 }
