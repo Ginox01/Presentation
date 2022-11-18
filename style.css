@@ -82,6 +82,10 @@ a {
   color: rgb(255, 167, 178);
 }
 
+.contacts a:active {
+  color: aqua;
+}
+
 span.mail {
   font-size: 20px;
 }
@@ -366,6 +370,12 @@ span.mail {
 
 .hobby-icons i {
   font-size: 50px;
+}
+
+.page-note-area-description {
+  width: 98%;
+  margin: auto;
+  font-size: 14px;
 }
 
 @keyframes animation-element {
