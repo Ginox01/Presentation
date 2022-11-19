@@ -577,6 +577,20 @@ span.mail {
 }
 
 @media only screen and (max-width: 450px) {
+  #page-3-div-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .div-3-content > i {
+    height: 30px;
+    width: 30px;
+    font-size: 30px;
+  }
+
+  .div-3-content > img {
+    height: 30px;
+  }
+
   .page-7-content-area > p {
     font-size: 12px;
   }
@@ -591,10 +605,6 @@ span.mail {
 }
 
 @media only screen and (max-width: 400px) {
-  #page-3-div-content {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .contacts ul {
     display: flex;
     justify-content: center;
@@ -604,16 +614,6 @@ span.mail {
 
   .div-page-2-content {
     font-size: 14px;
-  }
-
-  .div-3-content > i {
-    height: 30px;
-    width: 30px;
-    font-size: 30px;
-  }
-
-  .div-3-content > img {
-    height: 30px;
   }
 
   #page-1-menu {
