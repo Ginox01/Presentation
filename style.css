@@ -643,4 +643,7 @@ span.mail {
   .hobby {
     font-size: 12px;
   }
+  .page-note-area-description {
+    font-size: 10px;
+  }
 }
